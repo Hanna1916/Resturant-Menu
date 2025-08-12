@@ -3,9 +3,10 @@ import styles from "../foodItem/FoodItem.module.css";
 
 export default class FoodItem extends Component {
   render() {
+    // destructure the incoming props from this.props//
     const { title, category, price, img, desc } = this.props;
 
-    // Assign category colors
+    // Assign category
     const categoryClass =
       {
         breakfast: styles.breakfast,
@@ -35,3 +36,11 @@ export default class FoodItem extends Component {
     );
   }
 }
+
+// Receives data about a food item through props.
+
+// Dynamically assigns a CSS class based on the category.
+
+// Renders structured JSX for displaying that food item.
+
+// Uses CSS modules for styling.
